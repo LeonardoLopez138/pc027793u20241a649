@@ -9,14 +9,14 @@ import java.time.LocalDate;
 @Embeddable
 @Getter
 @NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
-public class FulfillmentPeriodPersistanceEmbeddeble{
+public class FulfillmentPeriodPersistanceEmbeddeble {
 
     //se agrega el primer dato
     @Column(name = "Start_Date", nullable = false)
     private LocalDate start;
 
     //se agrega el segundo dato
-    //se agrega el segundo dato
+
     @Column(name = "End_Date", nullable = false)
     private LocalDate end;
 
@@ -26,4 +26,5 @@ public class FulfillmentPeriodPersistanceEmbeddeble{
         this.start = startDate;
         this.end = endDate;
 
+    }
 }
