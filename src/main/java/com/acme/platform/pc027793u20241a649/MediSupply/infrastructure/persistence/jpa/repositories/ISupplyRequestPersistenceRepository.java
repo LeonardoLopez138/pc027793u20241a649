@@ -6,9 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface ISupplyRequestPersistenceRepository extends JpaRepository<SupplyRequestPersistenceEntity, Long> {
-    Optional<SupplyRequestPersistenceEntity> findByTitle(String code);
+    Optional<SupplyRequestPersistenceEntity> findByRequestCode(String requestCode);
 
-    boolean existsByRequestCode(String code);
+    boolean existsByRequestCode(String requestCode);
 
-    boolean existsByRequestCodeAndIdIsNot(String code, Long id);
+    boolean existsByRequestCodeAndIdIsNot(String requestCode, Long id);
 }
