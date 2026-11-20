@@ -5,7 +5,7 @@ import com.acme.platform.pc027793u20241a649.MediSupply.domain.model.aggregates.S
 import java.util.List;
 import java.util.Optional;
 
-public interface SupplyRequestRepository {
+public interface ISupplyRequestRepository {
     Optional<SupplyRequest> findById(Long id);
 
     List<SupplyRequest> findAll();
